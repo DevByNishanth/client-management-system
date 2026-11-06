@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 
 export const Dashboard = () => {
+  console.log("")
   return (
     <>
       <div className="main-container h-[94.1vh] flex gap-5">
