@@ -44,7 +44,7 @@ const ClientTable = () => {
         "bg-linear-to-r  from-amber-600 to-amber-900"
     ];
     return (
-        <div className="w-full overflow-hidden mt-4  ">
+        <div className="w-full overflow-hidden mt-4 ">
 
             {/* Table Header */}
             <div className="overflow-x-auto">

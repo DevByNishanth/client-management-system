@@ -54,9 +54,9 @@ const followUps = [
 const TodaysFollowUps = () => {
     return (
         <>
-            <div className="main-container  col-span-4 bg-[#222c4191]/40 border border-[#28395e91]  rounded-2xl">
+            <div className="main-container w-full h-full min-h-0 overflow-auto custom-scrollbar col-span-4 bg-[#222c4191]/40 border border-[#28395e91] rounded-2xl">
 
-                <div className="header px-4 py-4 flex justify-between gap-2">
+                <div className="header sticky top-0 bg-[#151b28] px-4 py-4 flex justify-between gap-2">
                     <div className="container-1 flex items-start gap-2">
                         <CalendarCheck size={16} className="text-white" />
                         <div className="-mt-[7px]">
@@ -66,7 +66,7 @@ const TodaysFollowUps = () => {
                     </div>
                     <button className="text-amber-600 text-xs flex items-center gap-2 -mt-6 cursor-pointer hover:text-amber-700">View all <span><ArrowRight size={14} /></span></button>
                 </div>
-                <div className="card-container px-4 space-y-2 max-h-[calc(100vh-370px)] overflow-auto custom-scrollbar">
+                <div className="card-container px-4 pb-4 space-y-2">
                     {followUps.map((item) => {
                         const Icon = item.icon
                         const followType = item.followUpType.toLowerCase();

@@ -48,7 +48,7 @@ export default function LeadsChart() {
   const highestLeads = Math.max(...data.map((item) => item.leads));
 
   return (
-    <div className="w-full rounded-2xl col-span-8 bg-[#222c4191]/40 border border-[#28395e91]  p-5 text-white">
+    <div className="w-full h-full min-h-0 rounded-2xl col-span-8 bg-[#222c4191]/40 border border-[#28395e91] p-5 text-white flex flex-col">
       {/* Header */}
       <div className="mb-2 flex flex-wrap items-center justify-between gap-4">
         <div>
@@ -81,7 +81,7 @@ export default function LeadsChart() {
       </div>
 
       {/* Area Chart */}
-      <div className="h-[210px] w-full">
+     <div className="h-[210px] w-full min-h-0">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             data={data}

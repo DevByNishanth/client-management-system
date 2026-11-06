@@ -30,7 +30,7 @@ export const Dashboard = () => {
 
 
           {/* content */}
-          <div className="main-content-container mt-4 h-[calc(100vh-105px)] hide-scrollbar overflow-auto  border-white">
+          <div className="main-content-container mt-4 h-[calc(100vh-105px)] hide-scrollbar overflow-auto  ">
             <header className="flex justify-between">
               <div>
                 <p className="font-semibold text-gray-100 text-xl">
@@ -49,14 +49,25 @@ export const Dashboard = () => {
             <Statcard />
 
 
-            {/* chart and table */}
-            <div className="main-container mt-4 grid grid-cols-12 gap-3 h-[390px]">
-              <LeadsChart />
-              <TodaysFollowUps />
+            {/* Chart and Follow-ups */}
+            <div className="mt-5 grid grid-cols-12 gap-4 items-stretch">
+
+              {/* Sales Chart */}
+              <div className="col-span-12 xl:col-span-8 min-w-0 h-[400px]">
+                <LeadsChart />
+              </div>
+
+              {/* Today's Follow-ups */}
+              <div className="col-span-12 xl:col-span-4 min-w-0 h-[400px]">
+                <TodaysFollowUps />
+              </div>
+
             </div>
 
-            {/* table  */}
-            <ClientTable />
+            {/* Client Table */}
+            <div className="mt-5 min-w-0">
+              <ClientTable />
+            </div>
           </div>
         </div>
       </div>
