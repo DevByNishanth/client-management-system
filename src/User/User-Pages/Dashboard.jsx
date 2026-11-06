@@ -9,6 +9,7 @@ import {
   Plus,
   UserRoundPlus,
 } from "lucide-react";
+import TodaysFollowUps from "../User-Components/TodaysFollowUps";
 
 export const Dashboard = () => {
   console.log("")
@@ -38,8 +39,9 @@ export const Dashboard = () => {
             </header>
 
             {/* chart and table */}
-            <div className="main-container mt-4 grid grid-cols-12 gap-3">
+            <div className="main-container mt-4 grid grid-cols-12 gap-3 h-[390px]">
               <LeadsChart />
+              <TodaysFollowUps />
             </div>
           </div>
         </div>

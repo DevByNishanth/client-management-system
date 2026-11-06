@@ -54,7 +54,7 @@ export default function LeadsChart() {
         <div>
           <h2 className="text-lg font-semibold">Sales Overview</h2>
 
-          <p className="mt-1 text-sm text-gray-400">
+          <p className=" text-xs text-gray-400">
             Track your lead generation performance
           </p>
         </div>
@@ -81,7 +81,7 @@ export default function LeadsChart() {
       </div>
 
       {/* Area Chart */}
-      <div className="h-[200px] w-full">
+      <div className="h-[210px] w-full">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             data={data}
